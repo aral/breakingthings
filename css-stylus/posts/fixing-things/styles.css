@@ -1,0 +1,23 @@
+.iphone-screenshot {
+  width: 320px;
+  height: 200px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  margin-top: 14px;
+  margin-top: 0.875rem;
+  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
+}
+.fullsize-iphone-screenshot {
+  height: 480px;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+@media screen and (max-width:320px) {
+  .iphone-screenshot,
+  .fullsize-iphone-screenshot {
+    width: 240px;
+    height: auto;
+  }
+}

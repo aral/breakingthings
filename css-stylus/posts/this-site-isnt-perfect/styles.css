@@ -1,0 +1,5 @@
+/* Optically adjust the header so that the capital T doesn’t indent the line. */
+article h1 {
+  margin-left: -5px;
+  margin-left: -0.3125rem;
+}

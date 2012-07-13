@@ -1,0 +1,166 @@
+/* The idea is to keep it simple. */
+html {
+/* 	By setting the base font size to 1px, I can better visualise font sizes as I work
+	and calculations become easier. */
+  font-size: 16px;
+  font-size: 1rem;
+  height: 100%;
+/* Background is a solid 10px border to the left. */
+  background: -moz-linear-gradient(left, #ff8b00 0.625rem, rgba(255,255,255,0) 0.625rem) repeat-y;
+  background: -ms-linear-gradient(left, #ff8b00 0.625rem, rgba(255,255,255,0) 0.625rem) repeat-y;
+  background: -o-linear-gradient(left, #ff8b00 0.625rem, rgba(255,255,255,0) 0.625rem) repeat-y;
+  background: -webkit-gradient(linear, 0 0, 100% 0, color-stop(0.05, #ff8b00), color-stop(0.05, rgba(255,255,255,0))) repeat-y;
+/* The grid is just for use during development to make sure I'm keeping to vertical rhythm. */
+  background: -webkit-linear-gradient(left, #ff8b00 0.625rem, rgba(255,255,255,0) 0.625rem) repeat-y;
+/*, url('/images/24px-grid.gif') repeat-y*/
+  background: linear-gradient(left, #ff8b00 0.625rem, rgba(255,255,255,0) 0.625rem) repeat-y;
+  background-size: 10px 10px, auto auto;
+}
+/* Screens smaller than the optimum minimum width of the content
+   (as very subjectively chosen by yours truly.) */
+@media screen and (max-width: 600px) {
+}
+body {
+  font-size: 16px;
+  font-size: 1rem;
+/* Vertical rhythm is based on 24rem line-height (and fractional heights) */
+  line-height: 24px;
+  line-height: 1.5rem;
+/* Rudimentary line-length restriction */
+  max-width: 600px;
+  max-width: 37.5rem;
+  font-family: "PT Serif", Georgia, serif;
+  margin: 24px 48px 24px 48px;
+  margin: 1.5rem 3rem 1.5rem 3rem;
+}
+header {
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #000;
+/* Vertical rhythm: offset for 1px border. */
+  margin-top: -1px;
+  margin-top: -0.0625rem;
+}
+small {
+  font-size: 16px;
+  font-size: 1rem;
+}
+a {
+  color: #ff6a00;
+  text-decoration: none;
+  background-color: rgba(255,255,255,0);
+/* Make the hover state subtly fade in. */
+  -webkit-transition: color, border-bottom 0.2s;
+  -moz-transition: color, border-bottom 0.2s;
+  -o-transition: color, border-bottom 0.2s;
+  -ms-transition: color, border-bottom 0.2s;
+  transition: color, border-bottom 0.2s;
+}
+a:hover {
+  color: #ff5200;
+  border-bottom: 2px solid #ff8b00;
+}
+header a {
+  color: #000;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+}
+header p {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+h2 {
+  font-size: 22px;
+  font-size: 1.375rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+article {
+  margin: 24px 0px 24px 0px;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+}
+article h1,
+div[role="directory"] h1 {
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+article p {
+  margin: 12px 0px 12px 0px;
+  margin: 0.75rem 0rem 0.75rem 0rem;
+}
+li {
+  margin: 12px 0px 12px 0px;
+  margin: 0.75rem 0rem 0.75rem 0rem;
+}
+footer {
+  border-top: 1px solid #000;
+  padding-top: 24px;
+  padding-top: 1.5rem;
+  padding-bottom: 48px;
+  padding-bottom: 3rem;
+/* Vertical rhythm: offset for 1px border. */
+  margin-top: -1px;
+  margin-top: -0.0625rem;
+}
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1px;
+  line-height: 0.0625rem;
+  vertical-align: baseline;
+}
+pre code {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+/* Make preformatted text wrap so it doesn't mess up the design. */
+/* Courtesy of http://css-tricks.com/snippets/css/make-pre-text-wrap/ */
+  white-space: pre-wrap;
+/* css-3 */
+  white-space: -moz-pre-wrap;
+/* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+/* Opera 4-6 */
+  white-space: -o-pre-wrap;
+/* Opera 7 */
+  word-wrap: break-word;
+/* Internet Explorer 5.5+ */
+}
+em {
+  font-style: oblique;
+}
+strong {
+  font-weight: bold;
+}
+/* Index */
+div[role="directory"] {
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+}
+/* Footnote */
+#footnote {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-style: oblique;
+}
