@@ -1,0 +1,172 @@
+/* The idea is to keep it simple. */
+
+html {
+	/* 	By setting the base font size to 1px, I can better visualise font sizes as I work
+	and calculations become easier. */
+	font-size:1px;
+	height: 100%;
+
+	/* Background is a solid 10px border to the left. */
+	background: -moz-linear-gradient(left ,#ff8b00 10px, rgba(255,255,255, 0) 10px) repeat-y;
+	background: -ms-linear-gradient(left ,#ff8b00 10px, rgba(255,255,255, 0) 10px) repeat-y;
+	background: -o-linear-gradient(left ,#ff8b00 10px, rgba(255,255,255, 0) 10px) repeat-y;
+	background: -webkit-gradient(linear, 0 0, 100% 0, color-stop(0.1, #ff8b00), color-stop(0.1, rgba(255,255,255, 0))) repeat-y;
+	/* The grid is just for use during development to make sure I'm keeping to vertical rhythm. */
+	background: -webkit-linear-gradient(left ,#ff8b00 10px, rgba(255,255,255, 0) 10px) repeat-y, /*url('/images/24px-grid.gif') repeat-y*/;
+	background: linear-gradient(left ,#ff8b00 10px, rgba(255,255,255, 0) 10px) repeat-y;
+
+	background-size: 10px 10px, auto auto;
+
+}
+
+/* Screens smaller than the optimum minimum width of the content
+   (as very subjectively chosen by yours truly.) */
+@media screen and (max-width: 600px) {
+
+	/* Make the base font size a little smaller on smaller screens (all other spacing should
+       scale accordingly since I'm using REMs). */
+	html {
+		font-size: 0.8px;
+
+	}
+}
+
+body {
+	font-size:16rem;
+
+	/* Vertical rhythm is based on 24rem line-height (and fractional heights) */
+	line-height: 24rem;
+
+	/* Rudimentary line-length restriction */
+	max-width:600rem;
+
+	font-family: "PT Serif", Georgia, serif;
+	margin: 24rem 48rem 24rem 48rem;
+
+}
+
+
+header {
+	padding-bottom: 24rem;
+	border-bottom: 1px solid black;
+
+	/* Vertical rhythm: offset for 1px border. */
+	margin-top: -1px;
+}
+
+a {
+	color:#ff6a00;
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0);
+
+	/* Make the hover state subtly fade in. */
+	-webkit-transition: color, border-bottom 0.2s;
+	-moz-transition: color, border-bottom 0.2s;
+	-o-transition: color, border-bottom 0.2s;
+	-ms-transition: color, border-bottom 0.2s;
+	transition: color, border-bottom 0.2s;
+}
+
+a:hover {
+	color: #ff5200;
+	border-bottom: 2px solid #ff8b00;
+}
+
+header a {
+	color: black;
+}
+
+header h1 {
+	font-weight: bold;
+	font-size:18rem;
+	line-height:24rem;
+	margin-bottom: 0;
+}
+
+header p {
+	font-size:14rem;
+}
+
+h2 {
+	font-size:22rem;
+	margin-top:24rem;
+	margin-bottom:12rem;
+}
+
+article {
+	margin: 24rem 0 24rem 0;
+}
+
+article h1, div[role="directory"] h1 {
+	font-size:32rem;
+	line-height:36rem;
+	margin-top:12rem;
+	margin-bottom: 24rem;
+}
+
+article p {
+	margin:12rem 0 12rem 0;
+
+}
+
+li {
+	margin: 12rem 0 12rem 0;
+}
+
+footer {
+	border-top: 1px solid black;
+	padding-top:24rem;
+	padding-bottom:48rem;
+
+	/* Vertical rhythm: offset for 1px border. */
+	margin-top:-1px;
+
+}
+
+code {
+	font-family: "Courier New", Courier, monospace;
+	line-height: 24rem;
+	vertical-align: baseline;
+}
+
+pre code {
+	margin-top:24rem;
+	margin-bottom:24rem;
+
+	/* Make preformatted text wrap so it doesn't mess up the design. */
+	/* Courtesy of http://css-tricks.com/snippets/css/make-pre-text-wrap/ */
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+em {
+	font-style: oblique;
+}
+
+strong {
+	font-weight: bold;
+}
+
+
+li {
+	list-style-type: disc;
+
+
+}
+
+/* Index */
+
+div[role="directory"] {
+	padding-top: 12rem;
+	padding-bottom: 12rem;
+}
+
+/* Footnote */
+#footnote {
+	margin-bottom: 24rem;
+	font-size:14rem;
+	font-style: oblique;
+}

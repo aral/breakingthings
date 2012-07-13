@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>This site isn’t perfect (and that’s OK)&#8202;—&#8202;Breaking Things</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		/* Optically adjust the header so that the capital T doesn’t indent the line. */
+		article h1 {
+			margin-left:-5rem;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="/">
+			<h1>Breaking Things</h1>
+			<p>Have you tried turning it off and on again?</p>
+		</a>
+	</header>
+	<article>
+		<h1>This site isn’t perfect (and that’s OK)</h1>
+
+		<p>Let me share a dirty little secret with you: I cut nearly every corner I could to get this site up and running as quickly as possible. I’ve been keeping a diary of my time and, all in all, I’d say that I’ve spent less than four hours working on it, including writing the posts<a href="#footnote" rel="footnote" id="footnote-origin"><sup>*</sup></a>. And that includes a lot of time spent faffing around while debating which tools and technologies to use. In fact, that bit probably took the most time (sound familiar?)</p>
+
+		<p>Even though I knew from the outset that I wanted to make the simplest thing that could possibly work, I <em>still</em> got caught in the trap of <a href="http://en.wiktionary.org/wiki/yak_shaving">shaving yaks</a>.</p>
+
+		<h2>Shaving yaks in retail therapy</h2>
+
+		<p>Should I use <a href="http://c9.io/">Cloud 9 IDE</a> and deploy to <a href="http://www.heroku.com/">Heroku</a>? Why? Because I want to play with a nifty new tool and because I might want to add dynamic features later. Maybe I should buy <a href="http://panic.com/coda/">Coda 2</a> or create a fancy build system for my blog using <a href="https://github.com/mojombo/jekyll/">Jekyll</a> or <a href="http://octopress.org/">Octopress</a>? Why? Because of my fear of getting started.</p>
+
+		<p>A new tool will rarely solve your problems and retail therapy rarely makes you a better maker. If anything, we have too many tools to choose from today and you can work wonders with even the most modest of them. Such distractions are alluring, though, because they offer an instant shot of dopamine as you procrastinate while you’re afraid of actually getting started.</p>
+
+		<h2>Actually getting started</h2>
+
+		<p>Once I’d gotten past that brief block, it took me only a few minutes to register the domain name (I use <a href="http://domai.nr/">domai.nr</a> to check names and <a href="https://www.gandi.net/">Gandi</a> to register them), plug it into <a href="http://aws.amazon.com/route53/">Route 53</a>, and <a href="http://thechrisoshow.com/2011/06/05/how-to-host-a-static-website-on-s3/">set up an S3 bucket as a static website</a>. I realised that I didn’t need any new tools or fancy workflows to get started: I could just write the posts in plain old HTML and FTP (yes, FTP) the files up to S3 using <a href="http://panic.com/transmit/">Transmit</a> (which I already own).</p>
+
+		<p>And, to my credit, I did initially create a completely unstyled page and start writing my first post with every intention of releasing the site the moment it was complete. I found it difficult to read, however, so I spent a little bit of time adding a very basic stylesheet so the text had vertical rhythm and the most rudimentary limit on line widths.</p>
+
+		<p>I do wonder, however, how much of my initial reluctance to release a completely unstyled version was again <a href="2012-07-07-i-reboot.html">due to fear</a>. In this case, fear of losing reputation. What if they said "oh would you look at that, how ugly is Aral’s new blog… I thought he was a designer?" And you know what, so what if they had? Who are these ‘they’ anyway? And why do you care so much?</p>
+
+		<p>Design is a process, not an end product. This is especially true for intangible products like sites and apps, where the product is constantly evolving. All we can hope to do be is honest with ourselves and our audience and transparent about our process. And, if we keep that process as pragmatic and flexible as possible it’s far easier to respond and adapt to any feedback and evolve whatever it is we’re making. (Just don’t forget to filter any feedback you get through your design vision for your product.) Beyond that, if there are people out there who cannot appreciate your transparency and honesty, they are really not worthy of your time and they’re definitely not worth worrying about.</p>
+
+		<h2>Blast from the past</h2>
+
+		<p>Here’s a great example: When <a href="http://en.wikipedia.org/wiki/John_D._Carmack">John Carmack</a> (<a href="http://twitter.com/id_aa_carmack" title="John Carmack’s Twitter account">twitter</a>) was writing <a href="http://en.wikipedia.org/wiki/Quake_(video_game)">Quake</a> he would regularly release updates of his progress, honest appraisals of any shortcomings, and his thoughts for the future in simple, plain text files that he’d name with a .plan extension. <a href="http://www.team5150.com/~andrew/carmack/johnc_plan_1996.html">Here are some from 1996</a>. A number of them are relatively dry to-do lists of the features he was working on at the time. Others, like the one titled <a href="http://www.team5150.com/~andrew/carmack/johnc_plan_1996.html#d19960802">Here is the New Plan</a>, are honest appraisals of his progress and plans for the future. The one I love the most is <a href="http://www.team5150.com/~andrew/carmack/johnc_plan_1996.html#d19960808">the one from August 8th, 1996</a> that simply states: “There will be no more grandiose statements about our future projects. I can tell you what I am thinking, and what I am trying to accomplish, but all I promise is my best effort.”</p>
+
+		<p>How cool is that?</p>
+
+		<h2>Just do it!</h2>
+
+		<p>Just remember that the best way to start something new is to actually start something new. Don’t worry, because you <em>will</em> get it wrong at first anyway. That’s fine. Everybody does. What separates those who succeed from those who fail is that those who succeed refuse to give up. They don’t see mistakes as things to be avoided but as a necessary&#8202;—&#8202;and healthy&#8202;—&#8202;part of the process. They identify and fix problems, they learn from their mistakes, and they evolve whatever it is that they are making.</p>
+
+		<p>So this site isn’t perfect. Not by a long shot. But it’s up on the Internets and it has already given me a practical outlet for chronicling my personal reboot. And I can improve it as I go.</p>
+
+
+		<p><a href="/">Return to the table of contents.</a></p>
+	</article>
+	<footer>
+		<p id="footnote">* The time estimate doesn’t include the time this post took, which was about an hour to write, edit, and proof-read it several times. <a href="#footnote-origin">↩</a></p>
+		<p>Breaking Things is a personal reboot narrative by <a href="http://aralbalkan.com" title="Aral Balkan’s home page.">Aral Balkan</a>.</p>
+	</footer>
+</body>
+</html>

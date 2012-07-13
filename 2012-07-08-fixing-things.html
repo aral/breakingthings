@@ -1,0 +1,88 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Fixing things – Breaking Things</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/rainbow/default.css">
+	<script type="text/javascript" src="js/rainbow.min.js"></script>
+	<script type="text/javascript" src="js/html.js"></script>
+	<script type="text/javascript" src="js/css.js"></script>
+	<style type="text/css">
+		.iphone-screenshot {
+			width: 320px;
+			height: 200px;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+			margin-top: 14rem;
+			margin-bottom: 14rem;
+		}
+		.fullsize-iphone-screenshot {
+			height: 480px;
+			margin-top: 12rem;
+			margin-bottom: 12rem;
+		}
+		@media screen and (max-width:320px) {
+			.iphone-screenshot, .fullsize-iphone-screenshot {
+				width:240px;
+				height:auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="/">
+			<h1>Breaking Things</h1>
+			<p>Have you tried turning it off and on again?</p>
+		</a>
+	</header>
+	<article>
+		<h1>Fixing things</h1>
+
+		<p>You already know that <a href="/2012-07-08-this-site-isnt-perfect.html">this site isn’t perfect</a>. That’s not an excuse, just a fact. As I notice things that are necessary but missing or things that don’t work well, I’ll be updating them.</p>
+
+		<p>The first thing I noticed when I pulled the site up on my iPhone was that it didn’t look good at all. This is what the table of contents looked like:</p>
+
+		<img class="iphone-screenshot" src="/images/posts/fixing-things/breaking-things-mobile-1-cropped.png">
+
+		<p>And this was the first post:</p>
+
+		<img class="iphone-screenshot" src="/images/posts/fixing-things/breaking-things-mobile-2-cropped.png">
+
+		<p>Not very readable.</p>
+
+		<p>So I took about fifteen minutes to add a few lines of code to make the site easier to read on smaller screens. First off, I added the <code>viewport</code> meta-tag to get a quick win:</p>
+
+		<pre><code data-language="html">&lt;meta name="viewport" content="width=device-width"&gt;</code></pre>
+
+		<p>Secondly, on screens with widths less than 600 pixels, I wanted to make the font size smaller since the text was appearing way too large. As I set my font size to 1px in the <code>html</code> element and use <code>rems</code> everywhere, I was able to do this easily and also maintain the rhythm of the margins, etc., with just a single media query:</p>
+
+		<pre><code data-language="css">@media screen and (max-width: 600px) {
+  html {
+    font-size: 0.8px;
+  }
+}</code></pre>
+		<p>Finally<a id="footnote-origin" href="#footnote"><sup>*</sup></a>, I saw that the orange accent on the left margin which I’m creating with a CSS gradient applied as the background image to the <code>html</code> element was blurry on my retina display so I added a media query to set the background size on that which fixed the problem.</p>
+
+		<p>And here are the after shots, starting with the table of contents:</p>
+
+		<img class="fullsize-iphone-screenshot" src="/images/posts/fixing-things/after-1-cropped.png">
+
+		<p>And that first article, again:</p>
+
+		<img class="fullsize-iphone-screenshot" src="/images/posts/fixing-things/after-2-cropped.png">
+
+		<p>That’s a bit more like it. At least you lovely folks won’t be straining your eyes to read my chronicles on your mobile phones.</p>
+
+		<p>My personal reboot isn’t about the development details of this site, but this site is part of my personal reboot so I might&#8202;—&#8202;from time to time&#8202;—&#8202;talk about it in passing with posts like this one.</p>
+
+		<p><a href="/">Return to the table of contents.</a></p>
+	</article>
+	<footer>
+		<p id="footnote">* While writing this post I had to display some code, so I prettified it using the <a href="http://craig.is/making/rainbows/">rainbow.js</a> syntax highlighting library. Also, in keeping with the spirit of <strong>the simplest thing that could possibly work</strong>, I added local styles to the post to deal with the screenshots, which are taken on a Retina display iPhone and displayed at half their original size so they’ll look good on high-resolution displays. <a href="#footnote-origin">↩</a></p>
+		<p>Breaking Things is a personal reboot narrative by <a href="http://aralbalkan.com" title="Aral Balkan’s home page.">Aral Balkan</a>.</p>
+	</footer>
+</body>
+</html>

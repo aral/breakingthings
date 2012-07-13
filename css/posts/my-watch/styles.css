@@ -1,0 +1,27 @@
+/* Article-specific styles for the article on my buying a watch. */
+
+#my-watch {
+	width: 300px;
+	height: 300px;
+	/* Setting the margins to keep to vertical rhythm. */
+	float:right;
+	margin-left:24rem;
+	margin-bottom:12rem;
+}
+
+@media screen and (max-width:600px) {
+	#my-watch {
+		float:none;
+		clear:both;
+		width:100%;
+		height:auto;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+@media screen and (max-width:320px) {
+	#my-watch {
+		width:240px;
+		height:auto;
+	}
+}
