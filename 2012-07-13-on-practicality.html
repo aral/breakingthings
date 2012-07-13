@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>On practicality&#8202;—&#8202;Breaking Things</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/rainbow/default.css">
+	<link rel="stylesheet" href="css/posts/on-practicality/styles.css">
+	<script type="text/javascript" src="js/rainbow.min.js"></script>
+	<script type="text/javascript" src="js/html.js"></script>
+	<script type="text/javascript" src="js/css.js"></script>
+</head>
+<body>
+	<header>
+		<a href="/">
+			<h1>Breaking Things</h1>
+			<p>Have you tried turning it off and on again?</p>
+		</a>
+	</header>
+	<article>
+		<h1>On practicality</h1>
+
+		<figure id="curly-quotes">“”<figcaption>English curved quotation marks</figcaption></figure>
+
+		<p>As I was writing the first few posts for Breaking Things, I was pain&shy;ful&shy;ly aware that I was doing a frankly ter&shy;rible job of pre&shy;senting certain typo&shy;graph&shy;ical ele&shy;ments. Spe&shy;cifi&shy;cal&shy;ly, I was using com&shy;mon <a href="http://en.wikipedia.org/wiki/Quotation_mark_glyphs#Typewriter_quotation_marks" title="Quotation mark glyphs ‐ Wikipedia, the free encyclopedia">ambi&shy;dex&shy;trous quo&shy;ta&shy;tion marks</a> (type&shy;wri&shy;ter quo&shy;tes) instead of proper Eng&shy;lish cur&shy;ved quotation marks (book quo&shy;tes). Any blogging engine worth its salt will have a so‐called smart quotes feature to pre‐process posts and auto&shy;matic&shy;ally con&shy;vert typewriter quotes to book quotes. Blog&shy;ging engines also bring with them a ple&shy;tho&shy;ra of other features, however, so I made a conscious decision <em>not</em> to use one for Breaking Things precisely because I wanted to start from scratch with a blank canvas and evolve the blog iteratively in step with the progression of my personal reboot. And it was the best decision ever. You have no idea how liberating and empowering it is not to be confined by the restrictions of generic frameworks and libraries or burdened by their layers upon layers of abstractions and their kitchen‐sink approach to features. The downside, of course, is that my fledgling little blog is left without a smart quotes feature. In fact, if you think about it, Breaking Things doesn’t really have any features at all, just content that I’ve lovingly hand‐crafted in HTML and CSS.</p>
+
+		<blockquote>Pragmatism and crafts&shy;man&shy;ship are not mutually exclusive.</blockquote>
+
+		<p>So, given the ty&shy;po&shy;graph&shy;ically un&shy;sight&shy;ly and un&shy;accept&shy;able <em>status quo</em> and my stub&shy;born re&shy;luct&shy;ance to use an existing blog&shy;ging engine, I had to come up with a dif&shy;ferent so&shy;lu&shy;tion to my typewriter quote in&shy;fest&shy;ation problem.</p>
+
+		<p>Since I know how to code, my first ins&shy;tinct was to cook up a little script to convert ambidextrous quotes to curvy quo&shy;tes. Or, perhaps, I could find and use an existing script. Maybe, I could even gut just that one feature out from one of the other blogging engines. After all, there is really no reason to reinvent the wheel unless you absolutely have to. But that would have involved introducing a build stage to my blogging process and I’m very cau&shy;tious about adding any new layers of abstraction to my workflow at this point.</p>
+
+		<p>Each layer of abstraction you add to a product or workflow brings with it promises of functionality and pro&shy;duct&shy;iv&shy;ity enhancements but comes at the cost of an add&shy;itional layer of complexity that separates you from whatever it is that you’re build&shy;ing. The key is in knowing when the value of that additional layer of abstraction outweighs the costs. You must be brutal in evaluating this. Make each layer of abstraction justify its <em>raison d'être</em> to you before you commit to it. Don’t reinvent the wheel, but also don’t add unnecessary layers of complexity to your workflow and products either. Through the years, I've realised that while monolithic frame&shy;works and templates can give me a tremendous leg up in getting something rough and ready out of the door as quickly as possible, I usually end up finding it much harder work in the long run to learn their various idio&shy;syn&shy;cra&shy;sies to customise what I’m building precisely and remove spurious features that I don't need and which detract from the simplicity of the result that I covet. Sometimes, it’s more eco&shy;no&shy;mical in the long run to start with a blank slate.</p>
+
+		<h2>Automation isn’t always the right answer</h2>
+
+		<p>So, in the spirit of practicality, I decided not to introduce a build step at this stage in the evolution of the blog. Instead, I decided to bake the curly quotes into the text of my articles. When you think about it, that’s what we should be doing any&shy;way. The only reason we don’t use proper quotes when writing on computers is because computer keyboards are relics from the era of the typewriter and haven’t really evol&shy;ved much in the intervening decades.</p>
+
+		<figure id="typewriter"><a href="http://www.flickr.com/photos/27490956@N08/3626032099"><img src="/images/posts/on-practicality/old-typewriter.gif" alt="An old typewriter. Photo by Valeriana Solaris"></a><figcaption>Modern‐day keyboards haven’t evolved consider&shy;ably in the typographical sense since the early days of typewriters.</figcaption></figure>
+
+		<p>Ambi&shy;dext&shy;rous quotes were intro&shy;du&shy;ced on type&shy;writers as a space‐sa&shy;ving mea&shy;sure. That they have somehow sur&shy;vived un&shy;chang&shy;ed into the era of digi&shy;tal com&shy;puters is actually rather shocking. We’ve raised several gen&shy;erat&shy;ions of people who have no app&shy;re&shy;cia&shy;tion for proper typographical punc&shy;tua&shy;tion. We should be writing using proper punct&shy;uation as we go and the only reason we are not is a lack of edu&shy;cation combined with the lack of proper tools. The keyboards we have on our com&shy;puters today are stuck in the typographical stone age. So, to fix the problem, I realised that I had to fix the keyboard.</p>
+
+		<h2>Towards a typographically‐aware keyboard</h2>
+
+		<p>I’ve been a <a href="http://smilesoftware.com/TextExpander/" title="TextExpander: Mac Typing Shortcut Utility Saves You Time!">TextExpander</a> user for a while so my first thought was to use it to map practical keystroke combinations to pro&shy;per punctuation marks. Unfortunately, I could not get it to work reliably enough<a id="footnote-origin" href="#footnote"><sup>*</sup></a>. Un&shy;det&shy;erred, I decided to give a new app called <a href="http://www.ergonis.com/products/typinator/" title="Typinator—the fastest text expander in town">Typinator</a> a shot. And it worked like a charm.</p>
+
+		<p>Typinator, like Text Expander, is a macro expansion tool. It automatically replaces abbreviations with their long‐form coun&shy;ter&shy;parts as you type. For my purposes, I mapped easy‐to‐remember key sequences to proper curly quotes.</p>
+
+		<h2>All the gory details</h2>
+
+		<p>If you have Typinator, you may <a href="/downloads/Typography.tyset.zip">download my Typography abbreviation set</a> <small>(.zip, 4KB)</small> and use it freely. Below, you will find details of how it all works.</p>
+
+		<figure id="keyboard"><img src="/images/posts/on-practicality/keyboard.gif" alt="An overlay on my keyboard showing the keyboard shortcuts for curly quotes highlighted."><figcaption>A simple reconfiguration of habits.</figcaption></figure>
+
+		<p>I decided to use two‐character combinations to stand for single and double curly quotes. Spe&shy;ci&shy;fi&shy;cally, <kbd>;</kbd> + <kbd>.</kbd> creates an opening single quote and <kbd>'</kbd> + <kbd>/</kbd> creates a closing single quote (also known as an apostrophe). Similarly, <kbd>⇧</kbd> + <kbd>;</kbd> + <kbd>.</kbd> creates an opening double quote and <kbd>⇧</kbd> + <kbd>'</kbd> + <kbd>/</kbd> creates a closing double quote. I chose those particular key combinations because they’re both not likely to occur in everyday writing (to minimize false positives) and since they’re ergonomically placed in relation to each other and lo&shy;ca&shy;ted near the existing ambidextrous quote key on the keyboard to help me take ad&shy;van&shy;tage of existing muscle memory. It’s taken me about a day to get used to using proper curly quotes in my writing. By keeping the process manual, instead of auto&shy;ma&shy;ting a solution to the wrong prob&shy;lem, I’ve also empowered myself to write cor&shy;rect&shy;ly in any app, not just on my blog or in apps that have a smart quotes fea&shy;ture.</p>
+
+
+		<p></p>
+
+
+		<h2>Other typographical niceties</h2>
+
+
+		<p>In addition to curly quotes, a lot of online writing is littered with typographical faux pas. One of the most common, and a personal pet peeve of mine, is the use of three dots (...) instead of an ellipsis (…). Beyond the cruel inefficiency of using three glyphs where just one will suffice, ellipses are also set differently (notice the wider kerning between the dots in the ellipsis from the previous sentence). So, abandon the three dots, stave off RSI for a little while longer, and use <kbd>⌥</kbd> + <kbd>;</kbd> to create proper ellipses on Mac.</p>
+
+		<p>Another common typo&shy;graph&shy;ical trans&shy;gress&shy;ion guaranteed to leave the more typo&shy;graph&shy;ically‐sensitive among us froth&shy;ing at the mouth is confusing a hyphen‐minus with a hyphen, an en dash, an em dash, a minus sign, or with the figure dash. A hy&shy;phen‐minus (the <kbd>-</kbd> key on your keyboard) is the Frankenstein’s mons&shy;ter of the dash‐hyphen world. It is, like ambidextrous quotes, a relic from the days when effi&shy;cien&shy;cy con&shy;cerns governed the design of early typewriter keyboards and the gamut of dash‐like symbols was amalgamated into one glyph to save space. And, like most things that try to do (or be) too many things at once, it is es&shy;sen&shy;tial&shy;ly useless outside of coding and should be avoided.</p>
+
+		<p>The proper hyphen, which I’ve mapped to the character sequence <kbd>-</kbd> + <kbd>-</kbd> in Typinator, is used to create compound‐words‐like‐this. The en dash is used to spe&shy;cify ranges (e.g., 24–36 year olds) and is entered with the <kbd>⌥</kbd> + <kbd>-</kbd> key com&shy;bi&shy;na&shy;tion on Mac. Its better‐endowed cousin, the em dash&#8202;—&#8202;which is the length of an uppercase ‘M’, hence the name&#8202;—&#8202;is used to denote parenthetical statements&#8202;—&#8202;like the one just demonstrated&#8202;—&#8202;and is entered by using the <kbd>⌥</kbd> + <kbd>⇧</kbd> + <kbd>-</kbd> key com&shy;bi&shy;na&shy;tion on Mac. Additionally, the <code>emdash</code> abbreviation in my Typinator set creates an em dash surrounded by hairline spaces for use in HTML. Whatever you do, never, ever, use two hyphen‐minuses (--) to denote an em dash or the flying typography mons&shy;ter will douse you in spaghetti sauce when you least expect it (he’s apparently good friends with the flying spaghetti monster). A minus sign is used for arith&shy;metic (e.g., 46 − 4 = 42) and is mapped to the abbreviation <code>minussign</code> in Typ&shy;ina&shy;tor. Finally, the figure dash is the exact length of a digit in fonts with monospaced numerals and is used when you need a dash in a number. It is not used to specify a range of numbers (use an en dash instead) or to signify subtraction (use a minus sign) but can be used, for example, when writing phone numbers (e.g., 555‒1278). All this isn’t just aesthetic pedantry, the different marks have different semantics. Why should being semantic in your content be any less important than being semantic in your mark‐up?</li>
+
+		<p>Yet another boo‐boo is using the letter x when you mean to use the multiplication symbol, ×. I mapped that one to the <code>multiplicationsign</code> abbreviation in Typinator. Notice how much better 2 × 4 = 8 looks, compared to 2 x 4 = 8. There are too many examples to list all of them here but I’ll end with one last pet peeve: please don't use (c) when you mean to use the copyright symbol, ©. You can enter a proper copyright symbol using the <kbd>⌥</kbd> + <kbd>g</kbd> key combination on Mac (notice that the word is ‘copyright’, not ‘copywrite’). And, if you want to enter a trademark sign, the key combination for that is <kbd>⌥</kbd> + <kbd>⇧</kbd> + <kbd>2</kbd>, not (tm).</p>
+
+		<h2>Pragmatic craftsmanship</h2>
+
+		<p>While I’m being pragmatic about my blogging, this does not mean that I do not care about the quality of the final pro&shy;duct. Quite the contrary, my approach is that of a craftsman, cons&shy;tant&shy;ly tweak&shy;ing and continuously iterating over my work. I’ve made dozens of tiny improve&shy;ments to this blog since launch&shy;ing it just a few days ago. And you probably will not notice most of them, which is as it should be. The best design is invisible.</p>
+
+		<p>Pragmatism and craftsmanship are not mutually exclusive. In fact, I would go so far as to argue that the craftsperson, given the demands of her chosen under&shy;taking, must be pragmatic if she is to actually ship the fruits of her labour. Craftsmanship isn’t perfectionism. Care about the quality of your work and labour over the details and yet remain pragmatic in your approach. And before you throw yourself into solving a problem, make sure that the problem you’re solving is the right one.</p>
+
+		<p>Design is as much about identifying the correct problems to solve as it is about solving problems. The smart quotes fea&shy;tures in apps are pragmatic and useful hacks that nonetheless solve the wrong problem. The core problem is not ‘how do we convert ambidextrous quotes to book quotes?’ but ‘how do we get people to write using proper punctuation in the first place?’ Solving the wrong problem&#8202;—&#8202;or solving the problem at the wrong place&#8202;—&#8202;only helps to make us lazy and per&shy;pe&shy;tua&shy;tes the actual problem along with our bad writing habits. The correct place to solve this particular problem is at the keyboard. We must redesign the physical layout of modern keyboards to expose proper punctuation symbols. Barring that, in the short‐term, we can at least evolve current keyboards by using various key‐combination shortcuts to make it easier to write content with proper punctuation from the outset. Evolving a typographical keyboard is a pragmatic solution and one that I hope will help to make me a better craftsperson.</p>
+
+		<p><a href="/">Return to the table of contents.</a></p>
+	</article>
+	<footer>
+		<p id="footnote">* I tried the expansion with TextExpander 3.4, the version I own. I don’t know if it works the latest paid upgrade, which is version 4 as of this writing. The built‐in symbol and text substitution feature under Language & Text settings in the OS X Lion preferences panel can also be used in a pinch but it hasn’t worked reliably for me in every application. <a href="#footnote-origin">↩</a></p>
+		<p>Breaking Things is a personal reboot narrative by <a href="http://aralbalkan.com" title="Aral Balkan's home page.">Aral Balkan</a>.</p>
+	</footer>
+</body>
+</html>

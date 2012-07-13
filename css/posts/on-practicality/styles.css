@@ -36,15 +36,16 @@ figure#curly-quotes {
 	width:299rem;
 	border: 1px solid black;
 
-	/* Vertical margins compensate for 2 pixels of vertical border (vertical rhythm) */
-	margin: -1px -1px 24rem 48rem;
+	/* Vertical margins compensate for 2 pixels of vertical border (vertical rhythm) and
+	   optically align the top of the figure to the median of the first line of the paragraph. */
+	margin: 10rem -1rem 12rem 48rem;
 	padding-top: 144rem;
-	padding-bottom: 0rem;
+
 }
 
 figure#typewriter, figure#keyboard {
 	width:300px;
-	margin: 0 0 12rem 36rem;
+	margin: 10rem 0 12rem 36rem;
 }
 
 figure#keyboard {
@@ -115,7 +116,7 @@ blockquote {
 		font-size: 150rem;
 		padding-top:75rem;
 		margin-bottom: 12rem;
-		margin-left:12rem;
+		margin-left:48rem;
 	}
 }
 

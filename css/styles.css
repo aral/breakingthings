@@ -53,6 +53,10 @@ header {
 	margin-top: -1px;
 }
 
+small {
+	font-size: 0.8em;
+}
+
 a {
 	color:#ff6a00;
 	text-decoration: none;
@@ -124,7 +128,8 @@ footer {
 
 code {
 	font-family: "Courier New", Courier, monospace;
-	line-height: 24rem;
+	font-size:16rem;
+	line-height: 1;
 	vertical-align: baseline;
 }
 
