@@ -19,6 +19,10 @@ html {
 /* Screens smaller than the optimum minimum width of the content
    (as very subjectively chosen by yours truly.) */
 @media screen and (max-width: 600px) {
+  html {
+    font-size: 12.8px;
+    font-size: 0.8rem;
+  }
 }
 body {
   font-size: 16px;
