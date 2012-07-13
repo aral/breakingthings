@@ -99,29 +99,23 @@ blockquote {
 	max-width:40%;
 }
 
-@media screen and (max-width:300px) {
-	/* The pull quote doesn’t really work under this width. */
-	blockquote {
-		display:none;
-	}
-}
-
-@media screen and (max-width:320px) {
-	figure#keyboard, figure#typewriter, figure#curly-quotes {
-		width:100%;
-		float:none;
-		clear:both;
-		margin: 0;
-	}
+@media screen and (max-width:700px) {
 
 	figure#typewriter img, figure#keyboard img {
 		width:100%;
+		height: auto;
+	}
+
+	figure#curly-quotes, figure#typewriter, figure#keyboard{
+		width:50%;
 		height:auto;
 	}
 
-	/* Make pull quote smaller. */
-	blockquote {
-		font-size: 20rem !important;
+	figure#curly-quotes {
+		font-size: 150rem;
+		padding-top:75rem;
+		margin-bottom: 12rem;
+		margin-left:12rem;
 	}
 }
 
@@ -132,25 +126,25 @@ blockquote {
 		line-height: 36rem;
 		margin: 24rem 24rem 24rem 24rem;
 	}
-
 }
 
-@media screen and (max-width:700px) {
-	figure#keyboard, figure#typewriter, figure#curly-quotes
-	{
-		width:50%;
+@media screen and (max-width:380px) {
+	 figure#curly-quotes, figure#typewriter, figure#keyboard {
+		width:100%;
+		float:none;
+		clear:both;
+		margin: 0;
 	}
 
-	figure img {
-		width:100% !important;
-		height:auto !important;
+	/* Make pull quote smaller. */
+	blockquote {
+		font-size: 20rem;
 	}
+}
 
-	figure#curly-quotes {
-		width:50%;
-		font-size: 150rem;
-		padding-top:75rem;cur
-		margin-bottom: 12rem;
-		margin-left:12rem;
+@media screen and (max-width:300px) {
+	/* The pull quote doesn’t really work under this width. */
+	blockquote {
+		display:none;
 	}
 }

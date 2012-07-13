@@ -12,7 +12,7 @@ html {
 	background: -o-linear-gradient(left ,#ff8b00 10px, rgba(255,255,255, 0) 10px) repeat-y;
 	background: -webkit-gradient(linear, 0 0, 100% 0, color-stop(0.1, #ff8b00), color-stop(0.1, rgba(255,255,255, 0))) repeat-y;
 	/* The grid is just for use during development to make sure I'm keeping to vertical rhythm. */
-	background: -webkit-linear-gradient(left ,#ff8b00 10px, rgba(255,255,255, 0) 10px) repeat-y, /*url('/images/24px-grid.gif') repeat-y*/;
+	background: -webkit-linear-gradient(left ,#ff8b00 10px, rgba(255,255,255, 0) 10px) repeat-y/*, url('/images/24px-grid.gif') repeat-y*/;
 	background: linear-gradient(left ,#ff8b00 10px, rgba(255,255,255, 0) 10px) repeat-y;
 
 	background-size: 10px 10px, auto auto;
@@ -27,7 +27,6 @@ html {
        scale accordingly since I'm using REMs). */
 	html {
 		font-size: 0.8px;
-
 	}
 }
 
@@ -148,13 +147,6 @@ em {
 
 strong {
 	font-weight: bold;
-}
-
-
-li {
-	list-style-type: disc;
-
-
 }
 
 /* Index */
