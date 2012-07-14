@@ -5,8 +5,11 @@
 // will help me keep sane by using units that correspond to pixel units.
 
 line-height(h)
-	line-height: unit(h, 'px')
-	line-height: unit(h/16, 'rem')
+	if unit(h) == "rem"
+		line-height: unit(h, 'px')
+		line-height: unit(h/16, 'rem')
+	else
+		line-height: unit(h, unit(h))
 
 margin(t, r, b, l)
 	margin: unit(t, 'px') unit(r, 'px') unit(b, 'px') unit(l, 'px')
