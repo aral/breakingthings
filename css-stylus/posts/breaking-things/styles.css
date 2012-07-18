@@ -1,0 +1,81 @@
+body {
+  text-align: justify;
+}
+figure {
+  float: right;
+  width: 300px;
+  height: auto;
+  margin: 10px 0px 12px 36px;
+  margin: 0.625rem 0rem 0.75rem 2.25rem;
+  border: 1px solid #000;
+}
+figure img {
+  width: 300px;
+  height: auto;
+  display: block;
+}
+figure figcaption {
+  font-family: "PT Serif", Georgia, serif;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 18px;
+  line-height: 1.125rem;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding: 9px 9px 9px 9px;
+  padding: 0.5625rem 0.5625rem 0.5625rem 0.5625rem;
+/* Compensate for the 1px bottom border (vertical rhythm) */
+  margin-top: -1px;
+  margin-top: -0.0625rem;
+}
+/* Pull quote */
+blockquote {
+  text-align: left;
+  float: left;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 48px;
+  line-height: 3rem;
+  margin: 12px 60px 12px 0px;
+  margin: 0.75rem 3.75rem 0.75rem 0rem;
+  max-width: 40%;
+}
+@media screen and (max-width:700px) {
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+  figure {
+    width: 50%;
+    height: auto;
+  }
+}
+@media screen and (max-width:600px) {
+  blockquote {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 36px;
+    line-height: 2.25rem;
+    margin: 24px 24px 24px 24px;
+    margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+}
+@media screen and (max-width:380px) {
+  figure {
+    width: 100%;
+    float: none;
+    clear: both;
+    margin: 0px 0px 0px 0px;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+  blockquote {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width:300px) {
+  blockquote {
+    display: none;
+  }
+}

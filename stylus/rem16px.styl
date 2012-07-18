@@ -1,7 +1,7 @@
 // Mixins
 
 // Since some horrible browsers (e.g., on *spit* Android) don’t let you change the
-// root em, I'm forced to use the browser default of 16px as the base. This mixin
+// root em, I’m forced to use the browser default of 16px as the base. This mixin
 // will help me keep sane by using units that correspond to pixel units.
 
 line-height(h)
@@ -68,6 +68,41 @@ max-width(w)
 border-radius(r)
 	border-radius: unit(r, 'px')
 	border-radius: unit(r/16, 'rem')
+
+/* Border */
+
+abstract-border(borderType, borderArgs, originalArguments)
+	value = borderArgs[0];
+
+	// Only  'none'
+	if typeof(value) is "unit"
+
+		style = borderArgs[1];
+		color = borderArgs[2];
+
+		if unit(value) == "rem"
+			{borderType} unit(value, 'px') style color
+			{borderType} unit(value/16, 'rem') style color
+		else
+			{borderType} value style color
+	else
+		{borderType} originalArguments
+
+border(args...)
+	abstract-border("border", args, arguments)
+
+border-top(args...)
+	abstract-border("border-top", args, arguments)
+
+border-right(args...)
+	abstract-border("border-right", args, arguments)
+
+border-bottom(args...)
+	abstract-border("border-bottom", args, arguments)
+
+border-left(args...)
+	abstract-border("border-left", args, arguments)
+
 
 width(w)
 	if unit(w) == "rem" or unit(w) == ""

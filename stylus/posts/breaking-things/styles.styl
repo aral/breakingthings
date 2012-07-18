@@ -1,0 +1,71 @@
+@import '../../rem16px'
+
+body
+	text-align justify
+
+figure
+	float right
+	width 300px
+	height auto
+	margin 10rem 0 12rem 36rem
+	border 1px solid black
+
+	img
+		width 300px
+		height auto
+		display block
+
+	figcaption
+		font-family "PT Serif", Georgia, serif
+		font-size 12rem
+		line-height 18rem
+		color white
+		background-color black
+		text-align center
+		padding 9rem 9rem 9rem 9rem
+
+		/* Compensate for the 1px bottom border (vertical rhythm) */
+		margin-top -1px
+
+/* Pull quote */
+blockquote
+	text-align left
+	float left
+	font-size 30rem
+	line-height 48rem
+	margin 12rem 60rem 12rem 0rem
+	max-width 40%
+
+
+@media screen and (max-width:700px)
+
+	figure img
+		width:100%
+		height: auto
+
+	figure
+		width 50%
+		height auto
+
+@media screen and (max-width:600px)
+	/* Make pull quote smaller. */
+	blockquote
+		font-size 24rem
+		line-height 36rem
+		margin 24rem 24rem 24rem 24rem
+
+@media screen and (max-width:380px)
+	 figure
+		width 100%
+		float none
+		clear both
+		margin 0 0 0 0
+
+	/* Make pull quote smaller. */
+	blockquote
+		font-size 20rem
+
+@media screen and (max-width:300px)
+	/* The pull quote doesn’t really work under this width. */
+	blockquote
+		display none

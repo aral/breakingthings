@@ -6,19 +6,21 @@ html {
   font-size: 1rem;
   height: 100%;
 /* Background is a solid 10px border to the left. */
-  background: -moz-linear-gradient(left, #ff8b00 0.625rem, rgba(255,255,255,0) 0.625rem) repeat-y;
-  background: -ms-linear-gradient(left, #ff8b00 0.625rem, rgba(255,255,255,0) 0.625rem) repeat-y;
-  background: -o-linear-gradient(left, #ff8b00 0.625rem, rgba(255,255,255,0) 0.625rem) repeat-y;
-  background: -webkit-gradient(linear, 0 0, 100% 0, color-stop(0.05, #ff8b00), color-stop(0.05, rgba(255,255,255,0))) repeat-y;
-/* The grid is just for use during development to make sure I'm keeping to vertical rhythm. */
-  background: -webkit-linear-gradient(left, #ff8b00 0.625rem, rgba(255,255,255,0) 0.625rem) repeat-y;
-/*, url('/images/24px-grid.gif') repeat-y*/
-  background: linear-gradient(left, #ff8b00 0.625rem, rgba(255,255,255,0) 0.625rem) repeat-y;
-  background-size: 10px 10px, auto auto;
+/* The grid is simply for reference and is commented out in deployment builds. */
+  background-image: url("/images/orange-accent.gif");
+/*, url('/images/24px-grid.gif');*/
+  background-repeat: repeat-y;
+}
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),only screen and (min-device-pixel-ratio : 1.5) {
+  & {
+    background-image: url("/images/orange-accent@2x.gif");
+    background-repeat: repeat-y;
+    background-size: 10px auto;
+  }
 }
 /* Screens smaller than the optimum minimum width of the content
    (as very subjectively chosen by yours truly.) */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 12.8px;
     font-size: 0.8rem;
